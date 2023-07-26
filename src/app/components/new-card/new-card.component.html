@@ -1,0 +1,17 @@
+<ion-card *ngFor="let aNews of news" class="card-for">
+  <ion-row class="card">
+    <ion-col size="5">
+      <img
+        alt="My News"
+        class="img-src"
+        width="100%"
+        src="https://static.vecteezy.com/system/resources/thumbnails/006/299/370/original/world-breaking-news-digital-earth-hud-rotating-globe-rotating-free-video.jpg"
+      />
+    </ion-col>
+    <ion-col size="7" class="text-card">
+      <h5>{{ aNews.author }}</h5>
+      <h2>{{ aNews.title }}</h2>
+      <h5>{{ aNews.date }}</h5>
+    </ion-col>
+  </ion-row>
+</ion-card>

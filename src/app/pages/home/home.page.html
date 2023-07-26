@@ -1,0 +1,30 @@
+<ion-content class="content">
+  <ion-item lines="none">
+    <ion-icon slot="start" name="menu"></ion-icon>
+    <ion-icon slot="end" name="search"></ion-icon>
+    <ion-icon slot="end" name="notifications"></ion-icon>
+  </ion-item>
+
+  <ion-item lines="none" class="breaking-news">
+    <h5>Breaking News</h5>
+    <ion-button fill="clear" color="medium" size="small" slot="end" class="ion-no-border ion-no-margin ion-no-padding">View All</ion-button>
+  </ion-item>
+
+  <ion-item lines="none" class="swiperContainer">
+    <swiper-container class="swiper" [loop]="true" [pagination]="true">
+      <swiper-slide><img src="https://www.shutterstock.com/image-vector/news-anchor-on-tv-breaking-600w-664193623.jpg" height="100%" width="100%"></swiper-slide>
+      <swiper-slide><img src="https://cdn.wizard.com.br/wp-content/uploads/2020/06/29203410/qual-o-significado-da-expressao-em-ingles-fake-news.jpg" height="100%" width="100%"></swiper-slide>
+      <swiper-slide><img src="https://static.vecteezy.com/system/resources/thumbnails/006/299/370/original/world-breaking-news-digital-earth-hud-rotating-globe-rotating-free-video.jpg" height="100%" width="100%"></swiper-slide>
+    </swiper-container>
+  </ion-item>
+
+  <ion-item lines="none" class="recommendation">
+    <h5>Recommendation</h5>
+    <ion-button fill="clear" color="medium" size="small" slot="end" class="ion-no-border ion-no-margin ion-no-padding">View All</ion-button>
+  </ion-item>
+
+  <div>
+    <app-new-card></app-new-card>
+  </div>
+
+</ion-content>
